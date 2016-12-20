@@ -7,6 +7,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('paper');
+  this.route('android');
+  this.route('web');
+  this.route('contact');
 });
 
 export default Router;

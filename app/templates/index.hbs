@@ -1,0 +1,62 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+<div class="container">
+
+	<div class="titlebar">
+		<h1> Stuart Horner</h1> 
+		{{#link-to 'contact'}}<h2 class="title">Contact</h2> {{/link-to}}
+		<h2 class="dummy">&nbsp;//&nbsp;</h2>
+		<a href="../resume.pdf"><h2 class="title">Resume</h2> </a>
+	</div>
+
+	<div class="links fade-in">
+		{{#link-to 'paper'}}
+		<div class="typeWrap paper">
+			<img class="project" src="../img/paper.png" alt="other">
+			<h3 class="description">Other Projects</h3>
+		</div>
+		{{/link-to}}
+		
+		{{#link-to 'android'}}
+		<div class="typeWrap android">
+			<img class="project" src="../img/android.png" alt="android development">
+			<h3 class="description">Android Development</h3>
+		</div>
+		{{/link-to}}
+		
+		{{#link-to 'web'}}
+		<div class="typeWrap web">
+			<img class="project" src="../img/web.png" alt="web development">
+			<h3 class="description">Web Development</h3>
+		</div>
+		{{/link-to}}
+	</div>
+
+	<i id="down-arrow" class="material-icons md-48" {{action "scrollDown"}}>keyboard_arrow_down</i>
+</div>
+
+<div class="about">
+	<h2 class="about-title">About Me</h2>
+	
+	<div id="pic">
+		<img class="stu" src="../img/stu.jpg">	
+		<p id="about-text"> I am a computer science student at UCSD with an unconventional passion 
+		for political science. <br> <br> I want to use my computer science expertise, 
+		specifically in mobile and front-end development, to address problems in
+		the real world, such as racism, sexism, wealth inequality, and the massive 
+		exploitation of the developing world. My formal computer science training
+		is complemented by an informal political science background that comes 
+		from growing up in a family of lawyers, professors, and columnists. This 
+		duality separates me from many computer science students who entertain 
+		a sole passion, as I am able to give context to the work I do and better 
+		develop an answer to the timeless question, “why am I doing this?” <br> <br> 
+		Progress confined to the field of computer science is not enough
+		to me; we often forget that innovation and technological advances are 
+		useless unless they warrant positive, real-world change. I hope to combine 
+		these passions to create services beneficial to the social, economic, and 
+		political outlook of the US and the world. </p>
+	</div>	
+	
+</div>

@@ -1,0 +1,27 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+{{#if isShowingBody}}
+	<div class="content {{project.content}}">
+		<h2 id="content-title">
+			{{project.title}}
+			<i {{action "hideBody"}} id="close" class="material-icons md-48">clear</i> 
+		</h2>
+		<div id="overflow-wrapper">
+			<p class="content-text">{{{project.description}}}</p>
+			
+			{{#if project.github}}
+				<a href="{{project.github}}"> <img id="github" alt='GitHub' src='../img/github.png'> </a>
+			{{/if}}
+			{{#if project.link}}
+				<a href="{{project.link}}"> <img id="link" alt="{{project.title}}" src='../img/external.png'> </a>
+			{{/if}}
+		</div>
+	</div>
+{{/if}}
+
+<div {{action "showBody"}} class="projectWrap {{project.imgSize}} {{project.class}}
+									{{if isShowingBody "displaying displayingW" }}">
+	<img class="project" src="{{project.image}}" alt="{{project.title}}">
+	<img class="project inner" src="{{project.screenshot}}">
+	<h3 class="description">{{project.title}}</h3>
+</div>

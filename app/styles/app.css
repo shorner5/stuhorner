@@ -1,0 +1,400 @@
+body{ 
+	margin: 0;
+}
+
+/* HOME PAGE */
+
+.container {
+	position: fixed;
+	background-color: #69F0AE;
+	width: 100%;
+	height: 100%;
+}
+
+.titlebar {
+	position: fixed;
+	margin-left: 10%;
+	margin-top: 4%;
+}
+
+h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+	font-size: 4em;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 2em;
+	text-decoration: none;	
+}
+
+h2.title, h2.dummy{
+	float: left;
+	font-family: 'Oswald', sans-serif;
+	margin-right: 2%;
+	margin-top: 0;
+	color: white;
+	opacity: .54;
+}
+
+h2.title:link, h2.title:visited {
+	opacity: .54;
+	text-decoration: none;
+}
+
+h2.title:hover {
+	opacity: .8;
+}
+
+h2.title:active {
+	opacity: 1;
+}
+
+.typeWrap {
+	position: absolute;
+	height: 30%;
+}
+
+.android {
+	left: 41%;
+	width: 18%;
+}
+
+.web {
+	left: 6%;
+	width: 29%;
+}
+
+.paper {
+	left: 67%;
+	width: 23%;
+}
+
+.project {
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	width: 100%;	
+	transition: all .2s ease-in-out;
+}
+
+h3 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5em;
+	color: black;
+	opacity: .54;
+	text-align: center;
+}
+
+.description {
+	position: relative;
+	top: 97%;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: visibility opacity 1s;
+}
+
+.typeWrap:hover .description {
+	visibility: visible;
+	opacity: .54;
+}
+
+.typeWrap:hover .project {
+	transform: scale(1.05);
+}
+
+@keyframes upDown {
+  0%   { bottom: 20px; }
+  100% { bottom: 0px; }
+}
+@-o-keyframes upDown {
+  0%   { bottom: 20px; }
+  100% { bottom: 0px; }
+}
+@-moz-keyframes upDown {
+  0%   { bottom: 20px; }
+  100% { bottom: 0px; }
+}
+@-webkit-keyframes upDown {
+  0%   { bottom: 20px; }
+  100% { bottom: 0px; }
+}
+
+.links {
+	position: fixed;
+	width: 100%;	
+	top: 82%;
+}
+
+#down-arrow {
+	left: 50%;
+	margin-left:-24px;
+	bottom: 7.5%;
+	transition: all .2s ease-in-out;
+	-webkit-animation: upDown 2s infinite alternate;
+	-moz-animation: upDown 2s infinite alternate;
+	-o-animation: upDown 2s infinite alternate;
+	animation: upDown 2s infinite alternate;
+}
+
+.material-icons {
+  position: fixed;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  color: white;
+  font-style: normal;
+  transition: all .2s ease;
+
+	
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.material-icons.md-48 { font-size: 48px; }
+
+.material-icons:hover {
+	transform: scale(1.5);
+}
+
+/* ABOUT */
+
+.about {
+	position: absolute;
+	top: 100%;
+	background-color: white;
+	height: 65%;
+	width: 100%;
+	box-shadow: 0px -1px 20px silver;
+
+}
+
+h2.about-title {
+	color: black;
+	opacity: .54;
+	padding-top: 2%;
+	padding-left: 10%;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+#about-text {
+	margin-left: 22%;
+	padding-right: 25%;
+	background-color: white;
+}
+
+p {
+	color: #575757;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.3em;
+}
+
+#pic {
+	float: right;
+	padding-left: 10%;
+	padding-right: 12%;
+	width: 100%;
+	background-color: white;
+}
+
+.stu {
+	margin-top: -3%;
+	width: 20%;
+	float: right;
+	max-width: 200px;
+}
+
+
+/* PROJECTS */
+
+.imgAndroid {
+	width: 18%;
+}
+
+.imgWeb {
+	width: 30%;
+}
+
+.imgPaper {
+	width: 24%;
+}
+
+.projects {
+	position: fixed;
+	width: 100%;
+	top: 86%;
+}
+
+.projW1 { left: 3%; }
+.projW2 { left: 36%; }
+.projW3 { left: 67%; }
+.projA1 { left: 11.5%; }
+.projA2 { left: 41%; }
+.projA3 { left: 70.5%; }
+
+.displayingA {
+	left: 11.5%;
+}
+.displayingW {
+	left: 3%;
+}
+
+.displaying {
+	transition: all .5s ease;
+}
+
+.displaying .description {
+	visibility: visible;
+	opacity: .54;
+}
+
+.displaying .inner {
+	opacity: 1;
+}
+
+.web-projects {
+	position: fixed;
+	width: 100%;
+	top: 75%;
+}
+
+.projectWrap {
+	z-index: 0;
+	position: absolute;
+	height: 30%;
+	display: inline-block;
+	transition: all .5s ease;
+	visibility: 1;
+}
+
+.projectWrap:hover .description{
+	visibility: visible;
+	opacity: .54;
+}
+
+.projectWrap:hover .project {
+	transform: scale(1.05);
+}
+
+.inner {
+	visibility: invisible;
+	opacity: 0;
+}
+
+.projectWrap:hover .inner {
+	opacity: 1;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1 .5s forwards;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1 .5s forwards;
+	animation:fadeIn ease-in 1 .5s forwards;
+}
+
+/* CONTENT */
+
+@-webkit-keyframes slideLeftA { 100% { left: 32%; } }
+@-moz-keyframes slideLeftA { 100% {left: 32%; } }
+@keyframes slideLeftA { 100% { left: 32%; } }
+
+@-webkit-keyframes slideLeftW { 100% { left: 34%; } }
+@-moz-keyframes slideLeftW { 100% {left: 34%; } }
+@keyframes slideLeftW { 100% { left: 34%; } }
+
+@-webkit-keyframes slideLeftP { 100% { left: 30%; } }
+@-moz-keyframes slideLeftP { 100% {left: 30%; } }
+@keyframes slideLeftP { 100% { left: 30%; } }
+
+.web-content {
+	animation: slideLeftW .5s ease-in-out 0s 1 forwards;
+	-moz-animation: slideLeftW .5s ease-in-out 0s 1 forwards;
+	-webkit-animation: slideLeftW .5s ease-in-out 0s 1 forwards;
+}
+
+.paper-content {
+	animation: slideLeftP .5s ease-in-out 0s 1 forwards;
+	-moz-animation: slideLeftP .5s ease-in-out 0s 1 forwards;
+	-webkit-animation: slideLeftP .5s ease-in-out 0s 1 forwards;
+}
+
+.android-content {
+	animation: slideLeftA .5s ease-in-out 0s 1 forwards;
+	-moz-animation: slideLeftA .5s ease-in-out 0s 1 forwards;
+	-webkit-animation: slideLeftA .5s ease-in-out 0s 1 forwards;
+}
+
+.content {
+	position: fixed;
+	z-index: 1;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	padding-top: .5%;
+	padding-bottom: .5%;
+	left: 100%;
+	height: 72%;
+	top: 14%;
+	visibility: visible;
+	width: 60%;
+	border-radius: 8px;
+	background-color: mintcream;
+	box-shadow: 0px 5px 50px #888888;
+	overflow: hidden;
+}
+
+#overflow-wrapper {
+	overflow: auto;
+	position: relative;
+	height: 80%;
+	width: 100%;
+}
+
+.content-text {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5em;
+}
+
+#content-title {
+	font-family: 'Josefin Sans', sans-serif;
+	color: #575757;
+}
+
+#close {
+	padding-right: 1%;
+	position: relative;
+	color: #FF5733;
+	float: right;
+}
+
+#google {
+	position: relative;
+	width: 220px;
+	float: right;
+}
+
+#link {
+	position: relative;
+	float: right;
+	height: 56px;
+	bottom: -10px;
+	margin-right: 16px;
+}
+
+#github {
+	position: relative;
+	width: 180px;
+	float: right;
+	bottom: -10px;
+}

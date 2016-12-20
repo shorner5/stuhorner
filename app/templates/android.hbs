@@ -1,0 +1,13 @@
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+<div class="container">
+	<h1>//Select a Project</h1>
+	<div class="projects fade-in">
+		{{#each model as |project|}}
+			{{my-project opened="selected" closed="unselected" project=project}}
+		{{/each}}
+	</div>
+
+</div>
