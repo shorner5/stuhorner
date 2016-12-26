@@ -23,10 +23,12 @@ let web = [{
 }, {
 	title: 'About this Site',	
 	content: 'web-content',
+	description: 'This site is made with Ember.JS, HTML5, CSS3, and JavaScript. Click the link below to see the code on GitHub.',
 	class: 'projW3',
 	imgSize: 'imgWeb',
 	image: '../img/web.png',
-	screenshot: '../img/this.png'
+	screenshot: '../img/this.png',
+	github: 'https://github.com/shorner5/stuhorner'
 }];
 
 export default Ember.Route.extend({

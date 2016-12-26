@@ -144,8 +144,6 @@ h3 {
   font-weight: normal;
   color: white;
   font-style: normal;
-  transition: all .2s ease;
-
 	
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
@@ -376,6 +374,7 @@ p {
 	position: relative;
 	color: #FF5733;
 	float: right;
+	transition: all .25s ease;
 }
 
 #google {
@@ -397,4 +396,62 @@ p {
 	width: 180px;
 	float: right;
 	bottom: -10px;
+}
+
+/* CONTACT */
+
+.contact.text {
+	opacity: .54;
+	font-family: 'Oswald', sans-serif;
+}
+
+.contact {
+	position: relative;
+	margin-left: 10%;
+	color: white;
+}
+
+a.text {
+	text-decoration: none;
+	color: white;
+}
+
+a.text:hover {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+#contact {
+	padding-top: 100px;
+}
+
+@keyframes bounce {
+  0% {
+	  left: -5%;
+  }
+  
+  100% {
+	  transform: rotate(300deg);
+	  left: 105%;
+  }
+}
+@-o-keyframes bounce {
+  from {color: red;}
+  to {color: white; }
+}
+@-moz-keyframes bounce {
+  from {color: red;}
+  to {color: white; }
+}
+@-webkit-keyframes bounce {
+  from {color: red;}
+  to {color: white; }
+}
+
+
+.bounce {
+	bottom: 10%;
+	-webkit-animation: bounce 8s linear infinite;
+	-moz-animation: bounce 8s infinite;
+	-o-animation: bounce 8s infinite;
+	animation: bounce 8s ease infinite alternate;
 }
